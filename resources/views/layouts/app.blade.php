@@ -54,6 +54,15 @@
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('set_language', ['es']) }}"">{{ __('Spanish') }}</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('set_language', ['en']) }}"">{{ __('English') }}</a>
+                            </li>
+
                         @else
                             {{-- <li class="nav-item">
                                 <a class="nav-link" href="{{ route('admin.index') }}">Acceder a Admin</a>
@@ -70,6 +79,9 @@
                                     {{ Auth::user()->name }}
                                 </a>
 
+
+
+
                                 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
@@ -77,11 +89,24 @@
                                         {{ __('Logout') }}
                                     </a>
 
+
+                                    <a class="dropdown-item"
+                                        href="{{ route('set_language', ['es']) }}">{{ __('Spanish') }}</a>
+                                    <a class="dropdown-item"
+                                        href="{{ route('set_language', ['en']) }}">{{ __('English') }}</a>
+
+
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
                                     </form>
                                 </div>
                             </li>
+
+
+
+
+
+
                         @endguest
 
 

@@ -20,29 +20,29 @@
                             form="formEdit">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputPassword4" class="form-label">Nombre</label>
+                        <label for="inputPassword4" class="form-label">{{ __('Name') }}</label>
                         <input type="text" name="nombre_editar" class="form-control nombre" id="inputPassword4"
                             form="formEdit">
                     </div>
                     <div class="col-4">
-                        <label for="inputAddress" class="form-label">Apellidos</label>
+                        <label for="inputAddress" class="form-label">{{ __('Last name') }}</label>
                         <input type="text" name="apellidos_editar" class="form-control apellidos" id="inputAddress"
                             form="formEdit" placeholder="1234 Main St">
                     </div>
 
                     <div class="col-md-6">
-                        <label for="inputCity" class="form-label">Edad</label>
+                        <label for="inputCity" class="form-label">{{ __('Age') }}</label>
                         <input type="number" name="edad_editar" class="form-control edad" id="inputCity"
                             form="formEdit">
                     </div>
                     <div class="col-md-6">
-                        <label for="inputState" class="form-label">Fecha Nacimiento</label>
+                        <label for="inputState" class="form-label">{{ __('Birth date') }}</label>
                         <input type="date" name="nacimiento_editar" class="form-control nacimiento" id="inputCity"
                             form="formEdit">
                     </div>
 
                     <div class="col-6">
-                        <label for="inputAddress2" class="form-label">Sexo</label>
+                        <label for="inputAddress2" class="form-label">{{ __('Gender') }}</label>
 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input sexoF" type="radio" name="sexo_editar" id="sexo1"
@@ -58,7 +58,7 @@
                     </div>
 
                     <div class="col-6">
-                        <label for="inputAddress2" class="form-label">status</label>
+                        <label for="inputAddress2" class="form-label">{{ __('status') }}</label>
 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input status1" type="radio" name="status_editar" id="status1"

@@ -3,7 +3,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Alta empleado</h5>
+                <h5 class="modal-title" id="exampleModalLabel">{{ __('New employee') }}</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -13,32 +13,32 @@
                         <input type="text" name="clave" readonly class="form-control" id="clave" form="guardar">
                     </div>
                     <div class="col-md-4">
-                        <label for="inputPassword4" class="form-label">Nombre</label>
+                        <label for="inputPassword4" class="form-label">{{ __('Name') }}</label>
                         <input type="text" name="nombre" class="form-control" id="nombre" form="guardar" required>
                     </div>
                     <div class="col-4">
-                        <label for="inputAddress" class="form-label">Apellido paterno</label>
+                        <label for="inputAddress" class="form-label">{{ __('Last name') }}</label>
                         <input type="text" name="apellido_paterno" class="form-control" id="apellido_paterno" form="guardar" required
                             >
                     </div>
 
                     <div class="col-4">
-                        <label for="inputAddress" class="form-label">Apellido materno</label>
+                        <label for="inputAddress" class="form-label">{{ __('SurnamMothers last namees') }}</label>
                         <input type="text" name="apellido_materno" class="form-control" id="apellido_materno" form="guardar" required
                             >
                     </div>
 
                     <div class="col-md-6">
-                        <label for="inputCity" class="form-label">Edad</label>
+                        <label for="inputCity" class="form-label">{{ __('Age') }}</label>
                         <input type="number" name="edad" class="form-control" id="inputCity" form="guardar" required>
                     </div>
                     <div class="col-md-6">
-                        <label for="inputState" class="form-label">Fecha Nacimiento</label>
+                        <label for="inputState" class="form-label">{{ __('Birth date') }}</label>
                         <input type="date" name="nacimiento" class="form-control" id="inputCity" form="guardar" required>
                     </div>
 
                     <div class="col-6">
-                        <label for="inputAddress2" class="form-label">Sexo</label>
+                        <label for="inputAddress2" class="form-label"> {{ __('Gender') }}</label>
 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="sexo" id="inlineRadio1" required
@@ -54,7 +54,7 @@
                     </div>
 
                     <div class="col-6">
-                        <label for="inputAddress2" class="form-label">status</label>
+                        <label for="inputAddress2" class="form-label">{{ __('status') }}  </label>
 
                         <div class="form-check form-check-inline">
                             <input class="form-check-input" type="radio" name="status" id="inlineRadio1" required

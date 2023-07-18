@@ -5,7 +5,7 @@
 
 
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Nuevo Empleado
+            {{ __('New employee') }}
         </button>
 
 
@@ -33,15 +33,15 @@
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellidos</th>
-                            <th scope="col">Edad</th>
-                            <th scope="col">Fecha Nacimiento</th>
-                            <th scope="col">Genero</th>
-                            <th scope="col">Sueldo</th>
-                            <th scope="col">Detalle</th>
-                            <th scope="col">Editar</th>
-                            <th scope="col">Eliminar</th>
+                            <th scope="col">{{ __('Name') }}</th>
+                            <th scope="col">{{ __('Surnames') }}</th>
+                            <th scope="col">{{ __('Age') }}</th>
+                            <th scope="col">{{ __('Birth date') }}</th>
+                            <th scope="col">{{ __('Gender') }}</th>
+                            <th scope="col">{{ __('Salary') }}</th>
+                            <th scope="col">{{ __('Detail') }}</th>
+                            <th scope="col">{{ __('Edit') }}</th>
+                            <th scope="col">{{ __('Eliminate') }}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -59,7 +59,7 @@
                                 <td>{{ $item->fecha_nacimiento }}</td>
                                 <td> $ {{ $item->sueldo_base }}</td>
                                 <td><a href="{{ route('detalle.empleado', ['empleados' => $item->id]) }}"
-                                    type="button" class="btn btn-danger me-md-2">Detalle</a> </td>
+                                    type="button" class="btn btn-danger me-md-2">{{ __('Detail') }}</a> </td>
 
                                 <td><button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#editar" data-bs-id="{{ $item->id }}"
@@ -68,10 +68,10 @@
                                         data-bs-edad="{{ $item->edad }}"
                                         data-bs-fecha_nacimiento="{{ $item->fecha_nacimiento }}"
                                         data-bs-status="{{ $item->status }}"
-                                        data-bs-sueldo_base="{{ $item->sueldo_base }}">editar</button>
+                                        data-bs-sueldo_base="{{ $item->sueldo_base }}">{{ __('Edit') }}</button>
                                 </td>
                                 <td><a href="{{ route('eliminar.empleados', ['empleados' => $item->id]) }}"
-                                    type="button" class="btn btn-danger me-md-2">Eliminar</a> </td>
+                                    type="button" class="btn btn-danger me-md-2">{{ __('Eliminate') }}</a> </td>
                             </tr>
                         @empty
 

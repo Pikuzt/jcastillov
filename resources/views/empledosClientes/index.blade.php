@@ -30,13 +30,13 @@
                     <thead>
                         <tr>
                             <th scope="col">#</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellidos</th>
-                            <th scope="col">Edad</th>
-                            <th scope="col">Fecha Nacimiento</th>
-                            <th scope="col">Genero</th>
-                            <th scope="col">Sueldo</th>
-                            <th scope="col">Detalle</th>
+                            <th scope="col">{{ __('Name') }}</th>
+                            <th scope="col">{{ __('Surnames') }}</th>
+                            <th scope="col">{{ __('Age') }}</th>
+                            <th scope="col">{{ __('Birth date') }}</th>
+                            <th scope="col">{{ __('Gender') }}</th>
+                            <th scope="col">{{ __('Salary') }}</th>
+                            <th scope="col">{{ __('Detail') }}</th>
 
                         </tr>
                     </thead>
@@ -55,7 +55,7 @@
                                 <td>{{ $item->fecha_nacimiento }}</td>
                                 <td> $ {{ $item->sueldo_base }}</td>
                                 <td><a href="{{ route('index.detalle.singrafica.empleados', ['empleados' => $item->id]) }}" type="button"
-                                        class="btn btn-danger me-md-2">Detalle</a> </td>
+                                        class="btn btn-danger me-md-2">{{ __('Detail') }}</a> </td>
 
 
                             </tr>

@@ -17,11 +17,10 @@
 
                       <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">{{$dataEmpleado[0]->nombre}} {{$dataEmpleado[0]->apellidos}}</h5>
-                          <div class="card-text"><strong>Edad:</strong> {{$dataEmpleado[0]->edad}}</div>
-                          <div class="card-text"><strong>Genero:</strong> {{$dataEmpleado[0]->genero}}</div>
-                          <div class="card-text"><strong>Fecha Nacimiento:</strong> {{$dataEmpleado[0]->fecha_nacimiento}}</div>
-
+                            <h5 class="card-title">{{ $dataEmpleado[0]->nombre }} {{ $dataEmpleado[0]->apellidos }}</h5>
+                            <div class="card-text"><strong>{{ __('Age') }}:</strong> {{ $dataEmpleado[0]->edad }}</div>
+                            <div class="card-text"><strong>{{ __('Gender') }} :</strong> {{ $dataEmpleado[0]->genero }}</div>
+                            <div class="card-text"><strong>{{ __('Birth date') }}:</strong>{{ $dataEmpleado[0]->fecha_nacimiento }}</div>
                         </div>
                       </div>
                     </div>
